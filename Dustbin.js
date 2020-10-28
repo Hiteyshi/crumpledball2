@@ -21,16 +21,16 @@ class Dustbin {
       var leftpos =this.leftbody.position;
       var angle = this.angle;
       rectMode(CENTER);
-      push();
+      /*push();
       translate(leftpos.x,leftpos.y);
       rotate(angle);
       pop();
       push();
       translate(rightpos.x,rightpos.y);
       rotate(-1*angle);
-      pop();
+      pop();*/
       push();
-      translate(bottompos.x,bottompos.y);
+      translate(bottompos.x,bottompos.y+10);
       //rotate(angle);
      image(this.image,0,-this.height/2,this.width,this.height);
       pop();
